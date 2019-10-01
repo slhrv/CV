@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zxx">
+<html lang="fr">
 
 <head>
 	<meta charset="utf-8"> 
@@ -15,16 +15,14 @@
 
 	<aside>
 
-		<div class="aside_grid">
-
-		<div class="aside_logo col_span_3">
+		<div class="aside_logo">
 			<img src="logo.jpg" alt="logo" />
 		</div>
 
 		<!-- CONTACT -->
 
-		<h4 class="col_span_3"> contact </h4>
-		<dl class="aside_list col_span_3">
+		<h4> contact </h4>
+		<dl class="aside_list">
 			<dt>adresse</dt>
 			<dd class="aside_list_item"> france </dd>
 
@@ -43,29 +41,25 @@
 
 		<!-- A PROPOS-->
 		
-		<h4 class="col_span_3"> à propos de moi </h4>
-		<p class="aside_body col_span_3">
-			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		<h4> à propos de moi </h4>
+		<p class="aside_body">
+			Bon sens relationnel, dynamique, goût du travail en équipe, autonome, rigoureuse.
 		</p>
 
 		<!-- LOISIRS -->
 
-		<h4 class="col_span_3"> loisirs </h4>
-			<div class="aside_icons_border col_1">
-				<img src="icons/makeup.svg" alt="maquillage" title="les cosmétiques" />
+		<h4> loisirs </h4>
+		<div class="aside_icons">
+			<div class="aside_icons_border">
+				<img src="icons/makeup.svg" alt="maquillage" />
 			</div>
 			<div class="aside_icons_border col_2">
-				<img src="icons/plane.svg" alt="avion" title="voyager" />
+				<img src="icons/plane.svg" alt="avion" />
 			</div>
 			<div class="aside_icons_border col_3">		
-				<img src="icons/animal.svg" alt="patte animal" title="bénévole à la spa" />
+				<img src="icons/animal.svg" alt="animal" />
 			</div>
-</div>
+		</div>
 
 	</aside>
 
@@ -86,27 +80,54 @@
 				<h3>Formations</h3>
 			</header>
 
-			<article>
-				<header class="article_list_items_description">
-					<h5>Nom ecole</h5>
-					<h6><span>Titre du diplome</span></h6>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+			<article class="article_grid">
+				<header class="article_items_description">
+					<h5>OpenClassroom</h5>
+					<h6 class="article_items_subtitles">Découpez et intégrez une maquette</h6>
+					<ul>
+						<li>Conceptualiser les composants visuels sous forme d’éléments HTML</li>
+						<li>Séparer le texte des effets visuels</li>
+						<li>Reproduire la structure d’une page en HTML</li>
+						<li>Intégrer une grille Bootstrap pour obtenir une superbe mise en page</li>
+						<li>Ajouter des règles CSS à votre projet</li>
+					</ul>
 				</header>
 				<img src="icons/puce3.svg" alt="" />
-				<div class="article_list_items_date">
-					<h6>2016-2017, Ville</h6>
+				<div class="article_items_date">
+					<h6>Août 2019</h6>
 				</div>
 			</article>
 
-			<article>
-				<header class="article_list_items_description">
+			<article class="article_grid">
+				<header class="article_items_description">
+					<h5>OpenClassroom</h5>
+					<h6 class="article_items_subtitles">Apprenez à créer votre site web avec HTML5 et CSS3</h6>
+					<ul>
+						<li>Utiliser du code HTML</li>
+						<li>Structurer une page web en HTML</li>
+						<li>Utiliser du code CSS</li>
+						<li>Mettre en forme une page web en CSS</li>
+						<li>Organiser les éléments d’une page Web grâce au CSS</li>
+						<li>Modifier l'agencement d'une page HTML avec CSS</li>
+						<li>Intégrer des formules dans une page web</li>
+						<li>Adapter une page pour les petites résolutions en CSS</li>
+					</ul>
+				</header>
+				<img src="icons/puce2.svg" alt="" />
+				<div class="article_items_date">
+					<h6>Juillet 2019</h6>
+				</div>
+			</article>
+
+			<article class="article_grid">
+				<header class="article_items_description">
 					<h5>Nom ecole</h5>
-					<h6><span>Titre du diplome</span></h6>
+					<h6 class="article_items_subtitles">BTS MUC (alternance)</h6>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 				</header>
 				<img src="icons/puce2.svg" alt="" />
-				<div class="article_list_items_date">
-					<h6>2016-2017, Ville</h6>
+				<div class="article_items_date">
+					<h6>2016-2019, Vannes</h6>
 				</div>
 			</article>
 
@@ -117,37 +138,36 @@
 				<h3>Expériences professionnelles</h3>
 			</header> 
 
-			<article>
-				<header class="article_list_items_description">
+			<article class="article_grid">
+				<header class="article_items_description">
 					<h5>Nom entreprise</h5>
-					<h6><span>Titre du métier</span></h6>
+					<h6 class="article_items_subtitles">Conseillère de vente</h6>
 					<ul>
-						<li>Employé libre service </li>
+						<li>Assurer l'accueil de la clientèle (conseil, vente)</li>
 						<li>Tenue de la caisse</li>
-						<li>Mise en rayon</li>
-						<li>Vérification des livraisons</li>
+						<li>Inventaires</li>
 					</ul>
 				</header>
 				<img src="icons/puce3.svg" alt="" />
-				<div class="article_list_items_date">
+				<div class="article_items_date">
 					<h6>Mai-Juin 2019, Ville</h6>
 				</div>
 				
 			</article>
 
-			<article>	
-				<header class="article_list_items_description">
+			<article class="article_grid">	
+				<header class="article_items_description">
 					<h5>Nom entreprise</h5>
-					<h6><span>Titre du métier</span></h6>
+					<h6 class="article_items_subtitles">Conseillère de vente (alternance)</h6>
 					<ul>
-						<li>Employé libre service </li>
-						<li>Tenue de la caisse</li>
-						<li>Mise en rayon</li>
-						<li>Vérification des livraisons</li>
+						<li>Plans merchandising (rayons, vitrine, PLV…)</li>
+						<li>Gestion des stocks et livraisons</li>
+						<li>Challenges et animations</li>
+						<li>Maquillage flash</li>
 					</ul>
 				</header>
 				<img src="icons/puce2.svg" alt="" />
-				<div class="article_list_items_date">
+				<div class="article_items_date">
 					<h6>Mai-Juin 2019, Ville</h6>
 				</div>
 				
@@ -160,30 +180,36 @@
 				<h3>Compétences</h3>
 			</header> 
 
-			<article>
-				<h6 class="article_list_items_category">Comptabilité</h6>
-				<div class="article_list_items_level"> 
-					<img src="icons/star1.svg" alt="2etoiles" /> 
-					<img src="icons/star1.svg" alt="" />
-				</div>
-			</article>
-
-			<article >
-				<h6 class="article_list_items_category">Management</h6>
-				<div class="article_list_items_level"> 
+			<article class="article_grid">
+				<h6 class="article_items_category">HTML5/CSS3</h6>
+				<div class="article_items_level"> 
 					<img src="icons/star1.svg" alt="4etoiles" /> 
 					<img src="icons/star1.svg" alt="" />
 					<img src="icons/star1.svg" alt="" />
 					<img src="icons/star1.svg" alt="" />
+					<img src="icons/star.svg" alt="" />
 				</div>
 			</article>
 
-			<article>
-				<h6 class="article_list_items_category">Anglais</h6>
-				<div class="article_list_items_level"> 
+			<article class="article_grid">
+				<h6 class="article_items_category">Management</h6>
+				<div class="article_items_level"> 
+					<img src="icons/star1.svg" alt="4etoiles" /> 
+					<img src="icons/star1.svg" alt="" />
+					<img src="icons/star1.svg" alt="" />
+					<img src="icons/star1.svg" alt="" />
+					<img src="icons/star.svg" alt="" />
+				</div>
+			</article>
+
+			<article class="article_grid">
+				<h6 class="article_items_category">Anglais</h6>
+				<div class="article_items_level"> 
 					<img src="icons/star1.svg" alt="3etoiles" /> 
 					<img src="icons/star1.svg" alt="" />
 					<img src="icons/star1.svg" alt="" />
+					<img src="icons/star.svg" alt="" />
+					<img src="icons/star.svg" alt="" />
 				</div>				
 			</article> 
 		</section>
