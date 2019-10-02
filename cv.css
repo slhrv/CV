@@ -221,7 +221,6 @@ font-size            : 11px;
 }
 
 h6 {
-padding-right        : 7px;
 font-size            : 10px;
 }
 
@@ -252,7 +251,7 @@ padding-right        : 18px;
 
 .article_grid {
 display              : grid;
-grid-template-columns: 17px 100px 1fr;
+grid-template-columns: 17px 150px 1fr;
 }
 
 article {
