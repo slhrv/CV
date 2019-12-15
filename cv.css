@@ -1,6 +1,7 @@
 /*couleur 
-rgb (#C8A79E) rose foncé
-rgb (#F3E6E0) rose clair*/
+rgb (#C8A79E) rose clair
+rgb (#916F65) rose foncé
+rgb (#5D3726) marron-rosé*/
 
 @font-face {
 font-family          : 'caviar_dreamsregular';
@@ -29,12 +30,13 @@ font-size            : 70px;
 h2,
 h3 {
 margin               : 2px 0 2px 0;
-font-size            : 35px;
+font-size            : 30px;
 font-weight          : bold;
 }
 
 h3 {
 padding-left         : 10px;
+align-self: center;
 }
 
 h4 {
@@ -43,7 +45,7 @@ text-align           : center;
 text-transform       : uppercase;
 font-size            : 25px;
 color                : #C8A79E;
-background-color     : #F3E6E0;
+background-color     : #5D3726;
 }
 
 h5 {
@@ -68,10 +70,31 @@ font-size            : 14px;
 list-style           : none;
 }
 
-/*ASIDE*/
+a {
+text-decoration: underline;
+color: #000;
+}
+
+/*
+	
+	
+	
+	  ###    ####  ## ####   #####
+	  ###   ##  ## ## ## ##  ##
+	 ## ##  ###    ## ##  ## ##
+	 ## ##   ####  ## ##  ## #####
+	 ## ##     ### ## ##  ## ##
+	####### #   ## ## ##  ## ##
+	##   ## ##  ## ## ## ##  ##
+	##   ##  ####  ## ####   #####
+	
+	
+*/
+
 
 aside {
 background-color     : #C8A79E;
+width: 25%;
 }
 
 .aside_logo {
@@ -127,11 +150,25 @@ padding              : 10px;
 main {
 height               : 100%;
 margin-left          : 50px;
-padding              : 0 50px;
-max-width            : 1200px;
+padding              : 0 20px;
 }
 
-/*HEADER*/
+/*
+	
+	
+	
+	##  ## #####   ###   ####   ##### #####
+	##  ## ##      ###   ## ##  ##    ##  ##
+	##  ## ##     ## ##  ##  ## ##    ##  ##
+	###### #####  ## ##  ##  ## ##### ##  ##
+	##  ## ##     ## ##  ##  ## ##    #####
+	##  ## ##    ####### ##  ## ##    ##  ##
+	##  ## ##    ##   ## ## ##  ##    ##  ##
+	##  ## ##### ##   ## ####   ##### ##  ##
+	
+	
+*/
+
 
 .header {
 margin               : 70px 0 70px 0;
@@ -140,22 +177,37 @@ text-align           : left;
 
 .header_title1 span {
 font-weight          : bold;
-color                : #C8A79E;
+color                : #916F65;
 }
 
 .header_title2 span {
 padding              : 0 0 5px 0;
-border-bottom        : solid 2px #C8A79E;
+border-bottom        : solid 2px #916F65;
 }
 
-/*SECTION*/
+/*
+	
+	
+	
+	 ####  #####   ####  ###### ##   ###   ##   ##
+	##  ## ##     ##  ##   ##   ##  ## ##  ###  ##
+	###    ##    ##    #   ##   ## ##   ## ###  ##
+	 ####  ##### ##        ##   ## ##   ## ## # ##
+	   ### ##    ##        ##   ## ##   ## ## # ##
+	#   ## ##    ##    #   ##   ## ##   ## ##  ###
+	##  ## ##     ##  ##   ##   ##  ## ##  ##  ###
+	 ####  #####   ####    ##   ##   ###   ##   ##
+	
+	
+*/
+
 
 .section_header {
 display              : flex;
 flex-direction       : row;
 margin-bottom        : 30px;
 padding              : 15px 0;
-border-bottom        : solid 2px #C8A79E;
+border-bottom        : solid 2px #916F65;
 }
 
 .section_header img {
@@ -170,7 +222,7 @@ margin-bottom        : 15px;
 
 .article_grid {
 display              : grid;
-grid-template-columns: 30px 300px 1fr;
+grid-template-columns: 30px 280px 1fr;
 }
 
 article i {
@@ -194,7 +246,7 @@ grid-row             : 1;
 
 .fas,
 .far {
-color                : #C8A79E;
+color                : #916F65;
 }
 
 .article_items_subtitles {
@@ -204,7 +256,7 @@ font-weight          : lighter;
 
 /*MEDIA AND SCREEN */
 
-@media(min-width     :319px) and (max-width:767px) {
+@media all and (max-width:768px) {
 body {
 flex-direction       : column;
 font-size            : 15px;
@@ -216,7 +268,7 @@ font-size            : 35px;
 
 h2,
 h3 {
-font-size            : 15px;
+font-size            : 12px;
 }
 
 h4 {
@@ -229,7 +281,7 @@ font-size            : 11px;
 
 h6 {
 padding-right        : 7px;
-font-size            : 10px;
+font-size            : 11px;
 }
 
 p,
@@ -253,22 +305,34 @@ font-size            : 1.5em;
 
 .article_grid {
 display              : grid;
-grid-template-columns: 17px 100px 1fr;
+grid-template-columns: 17px 1fr;
+grid-template-rows: 30px 1fr;
 }
 
-article {
-padding-top          : 10px;
+article i {
+padding-top          : 2px;
+grid-column          : 1;
+grid-row             : 1;
 }
 
 .article_items_date,
 .article_items_category {
-padding              : 0 0 0 10px;
+grid-column          : 2;
+grid-row             : 1;
+padding              : 0 0 0 3px;
+}
+
+.article_items_description,
+.article_items_level {
+grid-column          : 2;
+grid-row             : 2;
+padding-left: 3px;
 }
 
 aside {
 order                : 2;
+width      			 : 100%;
 margin-top           : 15px;
-padding              : 0 15px;
 }
 
 .aside_logo img {
@@ -290,7 +354,8 @@ border-radius        : 50%;
 }
 }
 
-@media(min-width     :768px) and (max-width:1023px) {
+@media all and (min-width:768px) and (max-width:1023px) {
+
 body {
 display              : flex;
 flex-direction       : column;
@@ -301,9 +366,12 @@ h1 {
 font-size            : 50px;
 }
 
-h2,
+h2 {
+font-size            : 22px;
+}
+
 h3 {
-font-size            : 30px;
+font-size            : 27px;
 }
 
 h4 {
@@ -335,22 +403,33 @@ font-size            : 35px;
 
 .article_grid {
 display              : grid;
-grid-template-columns: 22px 200px 1fr;
+grid-template-columns: 17px 1fr;
+grid-template-rows: 50px 1fr;
 }
 
-article {
-padding-top          : 15px;
+article i {
+grid-column          : 1;
+grid-row             : 1;
 }
 
 .article_items_date,
 .article_items_category {
+grid-column          : 2;
+grid-row             : 1;
 padding              : 0 0 0 15px;
+}
+
+.article_items_description,
+.article_items_level {
+grid-column          : 2;
+grid-row             : 2;
+padding-left: 15px;
 }
 
 aside {
 order                : 2;
+width      			 : 100%;
 margin-top           : 15px;
-padding              : 0 15px;
 }
 
 .aside_logo img {
@@ -372,38 +451,36 @@ border-radius        : 50%;
 }
 }
 
-@media(min-width     :1024px) and (max-width:1199px) {
+@media all and (min-width:1024px) and (max-width:1400px) {
 body {
-display              : flex;
-flex-direction       : column;
-font-size            : 30px;
+font-size            : 13px;
 }
 
 h1 {
-font-size            : 65px;
+font-size            : 50px;
 }
 
 h2,
 h3 {
-font-size            : 35px;
+font-size            : 22px;
 }
 
 h4 {
-font-size            : 28px;
+font-size            : 16px;
 }
 
 h5 {
-font-size            : 26px;
+font-size            : 16px;
 }
 
 h6 {
-font-size            : 23px;
+font-size            : 14px;
 }
 
 p,
 dl,
 li {
-font-size            : 20px;
+font-size            : 11px;
 }
 
 main {
@@ -415,46 +492,44 @@ padding              : 0 50px;
 font-size            : 45px;
 }
 
+.article_grid {
+display              : grid;
+grid-template-columns: 17px 250px 1fr;
+}
+
 .article_items_date,
 .article_items_category {
-padding              : 0 0 0 20px;
+padding-left: 20px;
+}
+
+.article_items_category {
+	padding: 5px 0 0 20px;
+}
+
+.fas,
+.far {
+padding-top: 5px;
 }
 
 aside {
-order                : 2;
-margin-top           : 15px;
-padding              : 0 50px;
-}
-
-.aside_logo img {
-width                : 20%;
+width: 20%;
 }
 
 .aside_list {
-text-align           : center;
-text-indent          : 0;
+	text-indent: 5px;
+}
+
+.aside_body {
+	padding : 0 0 0 5px;
 }
 
 .aside_icons img {
-width                : 40px;
+width                : 20px;
 }
 
 .aside_icons_border {
 border               : solid 1.5px #000;
 border-radius        : 50%;
-}
-}
-
-@media(min-width     :1200px) {
-body {
-justify-content      : center;
-}
-
-aside {
-max-width            : 370px;
-}
-
-main {
-max-width            : 1200px;
+margin: 0 5px 5px 10px;
 }
 }
