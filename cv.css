@@ -388,6 +388,7 @@ aside {
 
 .aside_icons img {
 	width                : 20px;
+	max-height	 		: 40px;
 }
 }
 
