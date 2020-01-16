@@ -142,11 +142,12 @@ margin: 0 10px;
 .aside_icons img {
 width                : 40px;
 padding              : 10px;
+height  			 : auto;
 }
 
 .aside_icons_categorie {
-	display: flex;
-	flex-direction: row;
+display: flex;
+flex-direction: row;
 }
 
 main {
@@ -388,11 +389,6 @@ aside {
 .aside_icons img {
 	width                : 20px;
 }
-
-.aside_icons_border {
-	border               : solid 1px #000;
-	border-radius        : 50%;
-}
 }
 
 @media all and (min-width:768px) and (max-width:1023px) {
@@ -492,11 +488,6 @@ aside {
 .aside_icons img {
 	width                : 40px;
 }
-
-.aside_icons_border {
-	border               : solid 1.5px #000;
-	border-radius        : 50%;
-}
 }
 
 @media all and (min-width:1024px) and (max-width:1400px) {
@@ -576,17 +567,11 @@ aside {
 .aside_icons img {
 	width                : 20px;
 }
-
-.aside_icons_border {
-	border               : solid 1.5px #000;
-	border-radius        : 50%;
-	margin: 0 5px 5px 10px;
-}
 }
 
 @media all and (min-width:1700px)  {
 
-	body {
-		max-width: 1700px;
-		margin: auto;
-	}
+body {
+	max-width: 1700px;
+	margin: auto;
+}
