@@ -129,23 +129,24 @@ text-transform       : capitalize;
 .aside_body {
 padding              : 0 30px;
 text-align           : left;
+font-weight: bold;
 }
 
 .aside_icons {
 display              : flex;
-flex-direction       : row;
+flex-direction       : column;
 justify-content      : center;
+margin: 0 10px;
 }
 
-.aside_icons_border {
-margin               : 0 10px 10px 20px;
-border               : solid 1.5px #000;
-border-radius        : 50%;
-}
-
-.aside_icons_border img {
+.aside_icons img {
 width                : 40px;
 padding              : 10px;
+}
+
+.aside_icons_categorie {
+	display: flex;
+	flex-direction: row;
 }
 
 main {
@@ -582,3 +583,10 @@ aside {
 	margin: 0 5px 5px 10px;
 }
 }
+
+@media all and (min-width:1700px)  {
+
+	body {
+		max-width: 1700px;
+		margin: auto;
+	}
