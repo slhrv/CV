@@ -1,3 +1,3 @@
 Projet 2 
 
-Lien vers la page web hébergée en ligne : https://slhrv.github.io/cv/
+Lien vers la page web hébergée en ligne : https://slhrv.github.io/CV/
