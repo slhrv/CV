@@ -1,218 +1,414 @@
-<!DOCTYPE html>
+  <!DOCTYPE html>
 <html lang="fr">
 
-<head>
-	<meta charset="utf-8"> 
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Mon CV</title>
-	<script src="https://kit.fontawesome.com/0b24a135a1.js" crossorigin="anonymous"></script>
-	<link href="cv.css" rel="stylesheet">
-</head>
+    <head>
+
+        <meta charset="utf-8"> 
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Mon CV</title>
+        <link href="cv.css" rel="stylesheet">
+    </head>
 
 <body>
 
-	<!-- ASIDE -->
+<div class="col">
 
+							<!-- ASIDE -->
 	<aside>
 
-		<div class="aside_logo">
-			<img src="logo.jpg" alt="logo" />
+		<div class="logo">
+
+			<p> 
+				<img class=imglogo src="logo.jpg" alt="logo">
+			</p>
+
 		</div>
 
-		<!-- CONTACT -->
+						<!-- BLOC1 -->
+		<div class="bloc1">
 
-		<h4> contact </h4>
-		<dl class="aside_list">
-			<dt>adresse</dt>
-			<dd class="aside_list_item">Nantes</dd>
+			<h4 class="titre1bloc1">
+				contact
+			</h4>
 
-			<dt>Téléphone</dt>
-			<dd>06.02.62.33.06</dd>
+			<div class="para1bloc1">
 
-			<dt>Email</dt>
-			<dd><a href=mailto:landrinsalome@gmail.com>landrinsalome@gmail.com</a></dd>
+				<dl>
+					<dt>adresse</dt>
+						<dd class="ville">france</dd>
+				</dl>
 
-			<dt>Site web</dt>
-			<dd><a href="https://github.com/slhrv?tab=repositories">GitHub</a></dd>
+				<dl>
+					<dt>Téléphone</dt>
+						<dd>06.00.00.00.00</dd>
+				</dl>
 
-			<dt>LinkedIn</dt>
-			<dd><a href="https://www.linkedin.com/in/salom%C3%A9-l-b32ab0166">Salomé Landrin</a></dd>
-		</dl>
+				<dl>
+					<dt>Email</dt>
+						<dd>email@gmail.com</dd>
+				</dl>
 
-		<!-- A PROPOS-->
-		
-		<h4>Soft Skills</h4>
-		<ul class="aside_body">
-			<li>La résolution de problèmes</li>
-			<li>L'esprit d'entreprendre</li>
-			<li>La motivation</li>
-			<li>La curiosité</li>
-		</ul>
+				<dl>
+					<dt>Site web</dt>
+						<dd>www.siteweb.com</dd>
+				</dl>
 
-		<!-- LOISIRS -->
+				<dl>
+					<dt>Skype</dt>
+						<dd>@skype</dd>
+				</dl>
 
-		<h4> loisirs </h4>
-		<div class="aside_icons">
-			<div class="aside_icons_categorie">
-				<img src="icons/makeup.svg" alt="maquillage" />
-				<p>
-					J'aime l'esthétique, l'harmonie des couleurs, travailler mon imagination
-				</p>
 			</div>
-			<div class="aside_icons_categorie">
-				<img src="icons/plane.svg" alt="avion" />
-				<p>
-					J'aime voyager, découvrir de nouvelles cultures et de nouveaux paysages.
-				</p>
+
+		</div>
+
+						<!-- BLOC2 -->
+		<div class="bloc2">
+
+			<h4 class="titre1bloc2">
+				à propos de moi
+			</h4>
+
+			<div class="para1bloc2">
+
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
 			</div>
-			<div class="aside_icons_categorie">
-				<img src="icons/gym.svg" alt="fitness" />
-				<p>
-					Tous les matins j'effectue une scéance de sport pour commencer ma journée sereine et pleine d'énergie.
-				</p>
+
+		</div>
+
+						<!-- BLOC3 -->
+		<div class="bloc3">
+
+			<h4 class="titre1bloc3">
+				loisirs
+			</h4>
+
+			<div class="iconesbloc3">
+
+				<div class="bordericonsbloc3">
+
+					<img class="icons1bloc3" src="icons/makeup.svg" alt="maquillage" title="les cosmétiques">
+
+				</div>
+				
+				<div class="bordericonsbloc3">
+
+					<img class="icons2bloc3" src="icons/plane.svg" alt="avion" title="voyager">	
+
+				</div>		
+			
+				<div class="bordericonsbloc3">
+
+					<img class="icons3bloc3" src="icons/animal.svg" alt="patte animal" title="bénévole à la spa">	
+
+				</div>	
+
 			</div>
+
 		</div>
 
 	</aside>
 
-	<!-- MAIN -->
 
-	<main>
+								<!-- Colonne droite  -->
 
-		<header class="header">
-			<h1 class="header_title1"><span>Salomé </span>Landrin</h1>
-			<h2 class="header_title2"><span>Dévelo</span>ppeuse web ( Alternance 6 mois : 4j Entreprise / 1j Formation)</h2>
+	<div class="coldroite">
+
+							<!-- HEADER -->
+		<header>
+
+			<h1 class="titre1header">
+
+				<span class="colortitre1header">Salomé</span> L
+
+			</h1>
+
+			<h2 class="titre2header">
+
+				<span class="titre2headerunderline">Dével</span>oppeuse web freelance
+
+			</h2>
+
 		</header>
 
-		<!-- FORMATIONS -->
-
+							<!-- SECTION -->
 		<section>
-			<header class="section_header">
-				<i class="fas fa-graduation-cap fa-3x"></i>
-				<h3>Formations</h3>
-			</header>
 
-			<article class="article_grid">
-				<header class="article_items_description">
-					<h5>Prep'Web</h5>
-					<h6 class="article_items_subtitles">OpenClassrooms</h6>
-					<ul>
-						<li>Assembler les pages en HTML5 et CSS3 à partir de maquettes graphiques</li>
-						<li>Respecter les normes d’accessibilité et de référencement web (W3C)</li>
-						<li>Mettre en oeuvre des effets CSS avancés pour dynamiser les pages</li>
-						<li>Améliorer le référencement d'un site web</li>
-						<li>Assurer la compatibilité avec les différents navigateurs du marché ainsi que les appareils mobiles</li>
-					</ul>
-				</header>
-				<i class="far fa-dot-circle"></i>
-				<div class="article_items_date">
-					<h6>Août 2019-Février 2020</h6>
+						<!-- FORMATIONS -->
+			<div class="article1">
+
+				<div class="headerarticle">
+
+					<img class="iconsarticle1" src="icons/graduation.svg" alt="chapeau diplomé" title="Formations">
+
+					<h3 class="titre1article">
+						Formations
+					</h3>
+
 				</div>
-			</article>
 
-			<article class="article_grid">
-				<header class="article_items_description">
-					<h5>BTS MUC (alternance)</h5>
-					<h6 class="article_items_subtitles">IBEP</h6>
-					<ul>
-						<li>Manager et gérer une unité commerciale</li>
-						<li>Gérer la relation avec la clientèle</li>
-						<li>Gérer et animer l’offre de produits et de services</li>
-						<li>Rechercher et exploiter l'information financière nécessaire à l'activité commerciale</li>
-					</ul>
-				</header>
-				<i class="fas fa-circle fa-xs"></i>
-				<div class="article_items_date">
-					<h6>2016-2019, Vannes</h6>
+					<div class="listarticle1">
+
+						<ul class="pucesarticle"> 
+
+							<li>
+								<img class="pucelist" src="icons/puce3.svg" alt="couronne de fleurs">
+							</li>
+
+						</ul>
+
+						<ul class="list2article1">
+
+							<li class="datearticle">
+								2016-2017 
+							</li>
+
+							<li class="datearticle"> 
+								Ville 
+							</li>
+							
+
+						</ul>
+
+						<ul class="list3article1">
+
+							<li class="nomlistarticle">Nom ecole</li>
+
+							<li>Titre du diplome</li>
+
+							<li class="paraarticle">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+							consequat.</li>
+
+						</ul>
+
+					</div>
+
+					<div class="listarticle1" >
+
+						<ul class="pucesarticle">
+
+							<li>
+								<img class="pucelist" src="icons/puce2.svg" alt="cercle">
+							</li>
+
+						</ul>
+
+						<ul class="list2article1">
+
+							<li class="datearticle">
+								2016-2017 
+							</li>
+
+							<li class="datearticle"> 
+								Ville 
+							</li>
+
+						</ul>
+
+						<ul class="list3article1">
+
+							<li class="nomlistarticle">Nom ecole</li>
+
+							<li>Titre du diplome</li>
+
+							<li class="paraarticle">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+							consequat.</li>
+
+						</ul>
+
+					</div>
+
+			</div>
+		
+						<!-- EXPERIENCE PRO -->
+			<div class="article2">
+
+				<div class="headerarticle">
+
+					<img class="iconsarticle2" src="icons/work.svg" alt="valise" title="Expérience professionnelle">
+
+					<h3 class="titre1article">
+						Expériences professionnelles
+					</h3>
+
 				</div>
-			</article>
 
-			<!-- EXPERIENCE PRO -->
+				<div class="listarticle2" >
 
-			<header class="section_header">
-				<i class="fas fa-briefcase fa-3x"></i>
-				<h3>Expériences professionnelles</h3>
-			</header> 
+						<ul class="pucesarticle">
 
-			<article class="article_grid">
-				<header class="article_items_description">
-					<h5>Conseillère de vente</h5>
-					<h6 class="article_items_subtitles">Ma Kibell, Cache-Cache, Monbana, L'Eau Vive</h6>
-					<ul>
-						<li>Assurer l'accueil de la clientèle (conseil, vente)</li>
-						<li>Tenue de la caisse</li>
-						<li>Mise en rayon</li>
-					</ul>
-				</header>
-				<i class="far fa-dot-circle"></i>
-				<div class="article_items_date">
-					<h6>Juin 2018-Juin 2019, Vannes</h6>
+							<li>
+								<img class="pucelist" src="icons/puce3.svg" alt="couronne de fleurs">
+							</li>
+
+						</ul>
+
+						<ul class="list2article2">
+
+							<li class="datearticle">
+								Mai-Juin 2019 
+							</li>
+
+							<li class="datearticle"> 
+								Ville 
+							</li>
+
+						</ul>
+
+						<ul class="list3article2">
+
+							<li class="nomlistarticle">Nom entreprise</li>
+
+							<li>Titre du métier</li>
+
+							<li class="paraarticle">Employé libre service</li>
+
+							<li>Tenue de la caisse</li>
+
+							<li>Mise en rayon</li>
+
+							<li>Vérification des livraisons</li>
+
+						</ul>
+
 				</div>
-				
-			</article>
 
-			<article class="article_grid">	
-				<header class="article_items_description">
-					<h5>Conseillère de vente (alternance)</h5>
-					<h6 class="article_items_subtitles">Yves Rocher</h6>
-					<ul>
-						<li>Plans merchandising (rayons, vitrine, PLV…)</li>
-						<li>Gestion des stocks et livraisons</li>
-						<li>Challenges et animations</li>
-						<li>Maquillage flash</li>
-					</ul>
-				</header>
-				<i class="fas fa-circle fa-xs"></i>
-				<div class="article_items_date">
-					<h6>Mai 2016-Juin 2018, Vannes</h6>
+				<div class="listarticle2" >
+
+						<ul class="pucesarticle">
+
+							<li>
+								<img class="pucelist" src="icons/puce2.svg" alt="cercle">
+							</li>
+
+						</ul>
+
+						<ul class="list2article2">
+
+							<li class="datearticle">
+								Mai-Juin 2019 
+							</li>
+
+							<li class="datearticle"> 
+								Ville 
+							</li>
+
+						</ul>
+
+						<ul class="list3article2">
+
+							<li class="nomlistarticle">Nom entreprise</li>
+
+							<li>Titre du métier</li>
+
+							<li class="paraarticle">Employé libre service</li>
+
+							<li>Tenue de la caisse</li>
+
+							<li>Mise en rayon</li>
+
+							<li>Vérification des livraisons</li>
+
+						</ul>
+
 				</div>
-				
-			</article>
 
-			<!-- COMPETENCES -->
+			</div>
 
-			<header class="section_header">
-				<i class="fas fa-user-cog fa-3x"></i>
-				<h3>Compétences</h3>
-			</header> 
+						<!-- COMPETENCES -->
+			<div class="article3">
 
-			<article class="article_grid">
-				<h6 class="article_items_category">Langages web</h6>
-				<p class="article_items_level"> 
-					HTML5, CSS3
-				</p>
-			</article>
+				<div class="headerarticle">
 
-			<article class="article_grid">
-				<h6 class="article_items_category">Framework</h6>
-				<p class="article_items_level"> 
-					Bootstrap
-				</p>
-			</article>
+					<img class="iconsarticle3" src="icons/skills.svg" alt="Compétences" title="Compétences">
 
-			<article class="article_grid">
-				<h6 class="article_items_category">Versioning</h6>
-				<p class="article_items_level"> 
-					Git, Github
-				</p>
-			</article>
+					<h3 class="titre1article">
+						Compétences
+					</h3>
+				</div>
 
-			<article class="article_grid">
-				<h6 class="article_items_category">Langues</h6>
-				<p class="article_items_level"> 
-					Anglais (techniques et B1)
-				</p>			
-			</article> 
+				<div class="listarticle3" >
 
-			<article class="article_grid">
-				<h6 class="article_items_category">Référencement</h6>
-				<p class="article_items_level"> 
-					SEO
-				</p>			
-			</article> 
+						<ul class="list2article3">
+
+							<li>
+								Comptabilité
+							</li>
+
+						</ul>
+
+						<ul class="pucesarticle">
+
+							<li>
+								<img class="puce2list" src="icons/star1.svg" alt="etoiles"> 
+								<img class="puce2list" src="icons/star1.svg" alt="etoiles">
+							</li>
+
+						</ul>
+
+				</div>
+
+				<div class="listarticle3" >
+
+						<ul class="list2article3">
+
+							<li>
+								Management
+							</li>
+
+						</ul>
+
+						<ul class="pucesarticle">
+
+							<li>
+								<img class="puce2list" src="icons/star1.svg" alt="etoiles"> 
+								<img class="puce2list" src="icons/star1.svg" alt="etoiles">
+							</li>
+
+						</ul>
+
+				</div>
+
+				<div class="listarticle3" >
+
+						<ul class="list2article3">
+
+							<li>
+								Anglais
+							</li>
+
+						</ul>
+
+						<ul class="pucesarticle">
+
+							<li>
+								<img class="puce2list" src="icons/star1.svg" alt="etoiles"> 
+								<img class="puce2list" src="icons/star1.svg" alt="etoiles">
+							</li>
+
+						</ul>
+
+				</div>
+
+			</div>
 
 		</section>
-	</main>
+
+	</div>
+
+</div>
+
 </body>
+
 </html>
